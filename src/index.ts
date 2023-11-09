@@ -1,4 +1,4 @@
-//todo:- Problem one:
+//todo:- Problem 1:
 
 function Union(Find: string | number){
   if(typeof Find === 'string'){
@@ -8,28 +8,36 @@ function Union(Find: string | number){
   }
 }
 
-const forit = Union(3)
+const forit = Union(78)
 // console.log(forit);
 
 
 
 // todo:- Problem 2:
 
-type Address = {
+type AddressObj = {
   city:string,
   street: string
 }
 
 interface Person{
-  address?:Address;
+  address?: AddressObj;
   phone?: number;
 }
 
-function getAddressCity( Person ){
+const findforCity : Person ={
+  address:{
+    city: 'dhaka',
+    street: 'by road'
+  },
+  phone: 984757757,
+}
+
+function getAddressCity( Person ) : string | undefined{
   return Person.address?.city;
 }
 
-const getcity = getAddressCity('dhaka')
+const getcity = getAddressCity(findforCity)
 // console.log(getcity);
 
 
@@ -41,9 +49,27 @@ const getcity = getAddressCity('dhaka')
 
 class Cat{
   name: string;
-  age: number
+  constructor(name: string){
+    this.name = name;
+  }
 }
 
+const IsCats = (cat: Cat) : cat is Cat=>{
+  return cat instanceof Cat;
+}
+
+function isCat(cat: Cat){
+  if(IsCats(cat)){
+    return `yes, it's a cat `
+  }else{
+    return `no it's not a cat`
+  }
+  
+}
+
+const cats = new Cat('cat')
+
+// console.log(isCat(cats));
 
 
 
@@ -71,17 +97,46 @@ const driver : Driver ={
   licenseNumber: 8975647
 }
 
-const CombineBoth =<D, C> (driver:D, car: C) : D | C=>{
+const CombineBoth =<C, D> (car:C, driver: D) : C | D=>{
   const Gather = {
-    ...driver,
-    ...car
+    ...car,
+    ...driver
   }
   return Gather;
 }
 
-const getobj = CombineBoth(driver, car)
+const getobj = CombineBoth(car, driver)
 
 // console.log(getobj);
+
+
+
+
+
+
+// todo:- Problem 7:
+
+
+const numbers: number[] = [1, 2, 3, 4, 5, 2];
+
+const strings: string[] = ["apple", "banana", "cherry", "date", "apple"];
+
+
+// function findFirstOccurrence<T>(arg: T[], ocr : T) :T{
+//   const rightOcr = arg.indexOf(ocr)
+//   if(rightOcr === 'none'){
+//     return -1
+//   }
+// }
+
+// const OccurenceFind = findFirstOccurrence(numbers, 2);
+
+// console.log(OccurenceFind);
+
+
+
+
+
 
 
 

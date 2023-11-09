@@ -1,4 +1,4 @@
-//todo:- Problem one:
+//todo:- Problem 1:
 function Union(Find) {
     if (typeof Find === 'string') {
         return Find.length;
@@ -7,16 +7,38 @@ function Union(Find) {
         return Find * Find;
     }
 }
-const forit = Union(3);
+const forit = Union(78);
+const findforCity = {
+    address: {
+        city: 'dhaka',
+        street: 'by road'
+    },
+    phone: 984757757,
+};
 function getAddressCity(Person) {
     var _a;
     return (_a = Person.address) === null || _a === void 0 ? void 0 : _a.city;
 }
-const getcity = getAddressCity('dhaka');
+const getcity = getAddressCity(findforCity);
 // console.log(getcity);
 // todo:- Problem 3:
 class Cat {
+    constructor(name) {
+        this.name = name;
+    }
 }
+const IsCats = (cat) => {
+    return cat instanceof Cat;
+};
+function isCat(cat) {
+    if (IsCats(cat)) {
+        return `yes, it's a cat `;
+    }
+    else {
+        return `no it's not a cat`;
+    }
+}
+const cats = new Cat('cat');
 const car = {
     make: 'Honda',
     model: 'dsr907',
@@ -26,11 +48,15 @@ const driver = {
     name: 'kader',
     licenseNumber: 8975647
 };
-const CombineBoth = (driver, car) => {
-    const Gather = Object.assign(Object.assign({}, driver), car);
+const CombineBoth = (car, driver) => {
+    const Gather = Object.assign(Object.assign({}, car), driver);
     return Gather;
 };
-const getobj = CombineBoth(driver, car);
+const getobj = CombineBoth(car, driver);
+// console.log(getobj);
+// todo:- Problem 7:
+const numbers = [1, 2, 3, 4, 5, 2];
+const strings = ["apple", "banana", "cherry", "date", "apple"];
 const product = {
     name: 'Shampoo',
     price: 30,
