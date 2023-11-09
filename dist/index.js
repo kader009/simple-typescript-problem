@@ -39,6 +39,11 @@ function isCat(cat) {
     }
 }
 const cats = new Cat('cat');
+// console.log(isCat(cats));
+// todo:- Problem 4:
+const array = [1, 'two', 3, 'four', 5];
+function sumUp(array) {
+}
 const car = {
     make: 'Honda',
     model: 'dsr907',
@@ -62,3 +67,8 @@ const product = {
     price: 30,
     quantity: 2
 };
+function Totalcost(product) {
+    return product.price * product.quantity;
+}
+const getotalCost = Totalcost(product);
+// console.log(getotalCost);
