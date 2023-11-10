@@ -59,9 +59,24 @@ const CombineBoth = (car, driver) => {
 };
 const getobj = CombineBoth(car, driver);
 // console.log(getobj);
+// todo:- Problem 6:
+function Params(para) {
+    if (typeof para === "number") {
+        const sum = +para;
+    }
+    else {
+        console.error('it is not a number');
+    }
+}
 // todo:- Problem 7:
 const numbers = [1, 2, 3, 4, 5, 2];
 const strings = ["apple", "banana", "cherry", "date", "apple"];
+function findFirstOccurrence(arg, ocr) {
+    const rightOcr = arg.indexOf(ocr);
+    if (rightOcr === 'none') {
+        return -1;
+    }
+}
 const product = {
     name: 'Shampoo',
     price: 30,

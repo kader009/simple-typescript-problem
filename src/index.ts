@@ -73,6 +73,8 @@ const cats = new Cat('cat')
 
 
 
+const luck : number | boolean | string = 23
+
 
 // todo:- Problem 4:
 
@@ -127,6 +129,24 @@ const getobj = CombineBoth(car, driver)
 
 
 
+// todo:- Problem 6:
+
+
+
+function Params(para: unknown){
+  if (typeof para === "number"){
+    const sum =+ para; 
+  }else{
+    console.error('it is not a number')
+  }
+
+}
+
+
+
+
+
+
 
 // todo:- Problem 7:
 
@@ -136,12 +156,12 @@ const numbers: number[] = [1, 2, 3, 4, 5, 2];
 const strings: string[] = ["apple", "banana", "cherry", "date", "apple"];
 
 
-// function findFirstOccurrence<T>(arg: T[], ocr : T) :T{
-//   const rightOcr = arg.indexOf(ocr)
-//   if(rightOcr === 'none'){
-//     return -1
-//   }
-// }
+function findFirstOccurrence<T>(arg: T[], ocr : T) :T{
+  const rightOcr = arg.indexOf(ocr)
+  if(rightOcr === 'none'){
+    return -1
+  }
+}
 
 // const OccurenceFind = findFirstOccurrence(numbers, 2);
 
