@@ -9,7 +9,6 @@ function Union(Find: string | number){
 }
 
 const forit = Union(78)
-// console.log(forit);
 
 
 
@@ -38,7 +37,6 @@ function getAddressCity( Person ) : string | undefined{
 }
 
 const getcity = getAddressCity(findforCity)
-// console.log(getcity);
 
 
 
@@ -69,23 +67,7 @@ function isCat(cat: Cat){
 
 const cats = new Cat('cat')
 
-// console.log(isCat(cats));
 
-
-
-const luck : number | boolean | string = 23
-
-
-// todo:- Problem 4:
-
-
-const array : (number | string)[] = [1, 'two', 3, 'four', 5]
-
-
-
-function sumUp(array){
-  
-}
 
 
 
@@ -123,57 +105,6 @@ const CombineBoth =<C, D> (car:C, driver: D) : C | D=>{
 
 const getobj = CombineBoth(car, driver)
 
-// console.log(getobj);
-
-
-
-
-
-// todo:- Problem 6:
-
-
-
-function Params(para: unknown){
-  if (typeof para === "number"){
-    const sum =+ para; 
-  }else{
-    console.error('it is not a number')
-  }
-
-}
-
-
-
-
-
-
-
-// todo:- Problem 7:
-
-
-const numbers: number[] = [1, 2, 3, 4, 5, 2];
-
-const strings: string[] = ["apple", "banana", "cherry", "date", "apple"];
-
-
-function findFirstOccurrence<T>(arg: T[], ocr : T) :T{
-  const rightOcr = arg.indexOf(ocr)
-  if(rightOcr === 'none'){
-    return -1
-  }
-}
-
-// const OccurenceFind = findFirstOccurrence(numbers, 2);
-
-// console.log(OccurenceFind);
-
-
-
-
-
-
-
-
 
 
 
@@ -198,7 +129,6 @@ function Totalcost(product){
 }
 
 const getotalCost = Totalcost(product)
-// console.log(getotalCost);
 
 
 
