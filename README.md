@@ -1,10 +1,10 @@
 What are some benefits of using TypeScript over JavaScript in a project?
 
-ans no one :- 1. type safety 2. better error handling 3. easy debug code 4. Readibility.
+Ans no 1 :- 1. type safety 2. better error handling 3. easy debug code 4. Readibility.
 
 What is the purpose of the optional chaining (?.) and nullish coalescing (??) operators in TypeScript, and how do they work? Provide an example for each.
 
-ans no two :- the purpose of the optional chaining is if i find something from the array or object if value unavailable but don't give the error.
+Ans no 2 :- the purpose of the optional chaining is if i find something from the array or object if value unavailable but don't give the error.
 
 const findforCity : Person ={
   address:{
@@ -26,16 +26,16 @@ const Istrue = true ?? 'istrue'.
 
 How do you handle asynchronous operations in TypeScript, and what are the advantages of using async/await over callbacks or Promises?.
 
-ans no three:- asynchronous operations main feature is error handing with a better way that will be tricky in Promises. async/await code syntax suger for Promises, and it make easier to understand.
+Ans no 3:- asynchronous operations main feature is error handing with a better way that will be tricky in Promises. async/await code syntax suger for Promises, and it make easier to understand.
 
 
 How can you use TypeScript's enums, and what are their advantages?.
 
-ans no four:- In typescript enums is a speacial set of constants variable. enums give us two favor string and number. enums advantage is structure code, readability, autocompletion.
+Ans no 4:- In typescript enums is a speacial set of constants variable. enums give us two favor string and number. enums advantage is structure code, readability, autocompletion.
 
 Explain the role of type guards in TypeScript and provide an example of a custom type guard.
 
-and no five:- the main role type guard in typescript is checking piece of code and narrow down the type of the variable.
+And no 5:- the main role type guard in typescript is checking piece of code and narrow down the type of the variable.
 
 function getValues(a: number | string, b: string) {
   if(a === b) {
@@ -48,7 +48,7 @@ function getValues(a: number | string, b: string) {
 
 Can you give an example of how to use "readonly" properties in TypeScript?
 
-ans no six:- The readonly keyword in the typescript the property read-only itself.
+Ans no 6:- The readonly keyword in the typescript the property read-only itself.
 
 class Readonly{
   readonly name: 'kader',
@@ -58,7 +58,7 @@ class Readonly{
 
 Explain what a union type is in TypeScript and provide an example of its usage.
 
-ans no seven:- A union type describe a many several types.
+Ans no 7:- A union type describe a many several types.
 
 const code : number | boolean | string ;
 
